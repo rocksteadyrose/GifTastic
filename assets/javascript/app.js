@@ -1,3 +1,4 @@
+$(document).ready(function() {
 
 var topics = ["full house", "roseanne", "the facts of life", "punky brewster", "the wonder years", "charles in charge", "diff'rent strokes", "family ties", "growing pains", "alf"];
 var newTopics = [];
@@ -57,6 +58,7 @@ var newTopics = [];
         var gifDiv = $("<div class='chosengif'>");
 
         var results = response.data;
+        console.log(response.data);
 
         for (i=0; i<results.length; i++) {
 
@@ -64,20 +66,20 @@ var newTopics = [];
 
         var p = $("<p>").text("Rating: " + rating);
 
-        var gif = $("<img>").attr("src", results[i].images.fixed_height.url);
-
+        var gif = $("<img>").attr({"src": results[i].images.fixed_height_still.url, "data-still": results[i].images.fixed_height_still.url, "data-animate": results[i].images.fixed_height.url,
+        "data-state": "still"});
+        gif.addClass('newgif');
+        
         gifDiv.append(p);
         gifDiv.append(gif);
 
         $("#showsDiv").append(gifDiv);
-
         
        }
     }      
     )})
   }
     
-
   $("#addShow").on("click", function(event) {
     // Preventing the button from trying to submit the form
    event.preventDefault();
@@ -90,8 +92,23 @@ var newTopics = [];
    topics.push(showName);
    clickButtons(showName);
 })
-   
+
+$(document).on('click', '.newgif', function() {
+    var state = $(this).attr("data-state");
+    console.log(this);
+
+if (state === "still") {
+        $(this).attr("src", $(this).attr("data-animate"));
+        $(this).attr("data-state", "animate");
+      } else {
+        $(this).attr("src", $(this).attr("data-still"));
+        $(this).attr("data-state", "still");
+  }
+
+});
+
 function clear() {
     $("#showsDiv").empty();
   }
          
+})

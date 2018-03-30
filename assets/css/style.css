@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+  }
+
+@font-face {
+    font-family: "assistantregular";
+    src: url("fonts/Assistant-Regular.ttf");
+    font-weight: normal;
+}
+
+html, body {
+    font-family: "assistantregular", Arial, Helvetica, sans-serif;
+    background-image: url('../images/80swallpaper.jpg');
+    color: rgb(0, 0, 0);
+    margin: 0 auto;
+}
+
+form {
+    float: right;
+    width: 10%;
+    margin-right: 80px;
+}
+
+#buttons80s {
+    margin: 15px;
+    font-size: 28px;
+}
+
+#showsDiv {
+    margin-left: 15px;
+    width: 950px;
+}
+
+.chosengif img {
+    height: auto;
+    border: 0 none;
+    float: left;
+    width: 100%;
+}
+
+.chosengif {
+    width: 288px;
+    height: 285px;
+    margin: 20px 5px 25px;
+    overflow: hidden;
+    float: left;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.chosengif h3 {
+    background-color: greenyellow;
+    font-size: 25px;
+    color: black;
+    border-bottom: 0;
+    text-align: center;
+    bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    line-height: 30px;
+    margin-bottom: 0;
+    }
+
+input[type="submit"] {
+    background-color: greenyellow;
+}
+
+button {
+    font-family: "assistantregular", Arial, Helvetica, sans-serif;
+    background-color: rgb(255, 0, 149);
+}
+

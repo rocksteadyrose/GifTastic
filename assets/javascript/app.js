@@ -1,43 +1,39 @@
 
 $(document).ready(function() {
 var topics = ["full house", "roseanne", "the facts of life", "punky brewster", "the wonder years", "charles in charge", "diff'rent strokes", "family ties", "growing pains", "alf", "dinosaurs", "saved by the bell"];
-var newTopics = [];
     
-  clickButtons();
-  function clickButtons(buttonEntry) {
+renderButtons();
+  function renderButtons() {
         
     for (i=0; i<topics.length; i++) {
-
-        if (topics.length === 12) {
+        
          showButton = $("<button>");
          showButton.text(topics[i]);
          var string = JSON.stringify(topics[i]);
          var stringReplace = string.replace(/\"/g, "");
          showButton.attr("data-button", stringReplace);
        $("#buttons80s").append(showButton);}
-        }
 
-       if (topics.length > 12) {
-        var newShow = topics.slice(-1)[0];
-        newTopics.push(newShow);
-        for (i=0; i<newTopics.length; i++) {
-        showButton = $("<button>");
-        showButton.text(newTopics[i]);
-        console.log(newTopics);
-        var string = JSON.stringify(newTopics[i]);
-        var stringReplace = string.replace(/\"/g, "");
-        showButton.attr("data-button", stringReplace);
-        $("#buttons80s").append(showButton);
-        topics.push(newShow);
-        newTopics = [];
-    }
-    }
+        $("#addShow").on("click", function(event) {
+          // Preventing the button from trying to submit the form
+         event.preventDefault();
+         //The trim() method removes whitespace from both sides of a string.
+         var showName = $("#shows-input").val().trim();
+         topics.push(showName);
+         showButton = $("<button>");
+         showButton.text(showName);
+         var string = JSON.stringify(showName);
+         showButton.attr("data-button", string);
+         $("#buttons80s").append(showButton);
+         console.log(topics);
+      })
+  }
+  
         
-    $("button").on("click", function() {
-
+  $(document).on('click', 'button', function() {
         clear();
-
         var show = $(this).attr("data-button");
+        console.log(this);
 
         //Splits it into substrings and then adds an + between the words so that they can fill the queryURL for the search
         var buttonEntry = show.split(' ').join('+');
@@ -52,7 +48,6 @@ var newTopics = [];
        .then(function(response) {
    
         var results = response.data;
-        console.log(response.data);
 
         for (i=0; i<results.length; i++) {
 
@@ -74,16 +69,9 @@ var newTopics = [];
        }
     }      
     )})
-  }
+
     
-  $("#addShow").on("click", function(event) {
-    // Preventing the button from trying to submit the form
-   event.preventDefault();
-   //The trim() method removes whitespace from both sides of a string.
-   var showName = $("#shows-input").val().trim();
-   topics.push(showName);
-   clickButtons(showName);
-})
+  
 
 $(document).on('click', '.newgif', function() {
     var state = $(this).attr("data-state");

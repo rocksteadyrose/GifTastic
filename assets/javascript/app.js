@@ -25,7 +25,6 @@ renderButtons();
          var string = JSON.stringify(showName);
          showButton.attr("data-button", string);
          $("#buttons80s").append(showButton);
-         console.log(topics);
       })
   }
   
@@ -33,11 +32,9 @@ renderButtons();
   $(document).on('click', 'button', function() {
         clear();
         var show = $(this).attr("data-button");
-        console.log(this);
 
         //Splits it into substrings and then adds an + between the words so that they can fill the queryURL for the search
         var buttonEntry = show.split(' ').join('+');
-
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + buttonEntry + "&api_key=mcfoMoI0yxAtwb46m31d1FWrixVlfsL4&limit=10";
     
         $.ajax({
@@ -46,26 +43,19 @@ renderButtons();
        }) 
    
        .then(function(response) {
-   
+  
         var results = response.data;
 
         for (i=0; i<results.length; i++) {
-
         var gifDiv = $("<div class='chosengif'>");
-
         var rating = results[i].rating;
-
         var h = $("<h3>").text("Rating: " + rating);
-
         var gif = $("<img>").attr({"src": results[i].images.fixed_height_still.url, "data-still": results[i].images.fixed_height_still.url, "data-animate": results[i].images.fixed_height.url,
         "data-state": "still"});
         gif.addClass('newgif');
-        
         gifDiv.append(h);
         gifDiv.append(gif);
-
         $("#showsDiv").append(gifDiv);
-        
        }
     }      
     )})
@@ -89,6 +79,5 @@ if (state === "still") {
 
 function clear() {
     $("#showsDiv").empty();
-  }
-         
+  }         
 })

@@ -3,23 +3,35 @@
 
 <head>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
   <meta charset="utf-8">
-  <title>GifTastic!</title>
+  <title>TOTALLY GifTastic!</title>
 </head>
 
 <body>
-  <div id="buttons80s"></div>
+  <div id="wrapper">
+      <div id="formwrapper">
+        <form id="80s-form">
+            <label for="shows-input">Add an 80s show!</label>
+            <input type="text" id="shows-input"><br>
+            <input id="addShow" type="submit" value="Submit">
+          </form>
+      </div>
 
-  <form id="80s-form">
-    <label for="shows-input">Add an 80s show</label>
-    <input type="text" id="shows-input"><br>
-    <input id="addShow" type="submit" value="Submit">
-  </form>
+      <div id="buttonswrapper">
+          <h1>Like, <span id="title">TOTALLY tubular</span> TV gifs!</h1>
+          <div id="buttonsbackground">
+              <div id="buttons80s"></div>
+          </div>
 
-  <div id="showsDiv"></div>
+      </div>
+
+    <div id="showsDiv"><p class="message">Click an 80s show above or add your own on the top right. <br> Then, click each gif to animate it!</p></div>
+
+  </div>
 
   <script src="https://code.jquery.com/jquery.js"></script>
 

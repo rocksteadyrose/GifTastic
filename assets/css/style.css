@@ -290,25 +290,31 @@ and (orientation : portrait) {
 
 /* iPhone 6/7/ 8 portrait */
 @media only screen 
-and (min-width : 375px) 
-and (max-width : 667px) 
-and (orientation : portrait) {
+  and (min-width: 375px) 
+  and (max-width: 667px) 
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation: portrait) { 
 
     #wrapper {
         max-width: 100%;
         overflow: hidden;
-
     }
 
+#addshowtext::after {
+    content: " Or, choose one below. Then, click each gif to animate it!";
+}
+
 form {
-    max-width: 40%;
+    width: 80%;
     position: absolute;
     text-align: center;
-    left: 115px;
+    left: 20px;
     bottom: 12px;
     z-index: 1;
     background-color: yellow;
 }
+
+
 
 h1 {
     font-family: "alienencounters", Arial, Helvetica, sans-serif;
@@ -316,7 +322,7 @@ h1 {
     max-width: 100%;
     color: rgb(255, 196, 0);
     margin: 1px;
-    padding: 30px 45px 90px 45px;
+    padding: 30px 90px 100px 45px;
     text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
 
 }
@@ -339,10 +345,10 @@ h1 {
 }
 
 #buttons80s {
-    margin: 0 80px 0 80px;
+    margin: 0 0 0 30px;
+    padding-right: 70px;
     font-size: 18px;
-    /* width: 75%; */
-    display: inline-block;
+    width: 90%;
     text-align:center;
 }
 
@@ -352,7 +358,7 @@ h1 {
 
 #showsDiv {
     width: 230px;
-    margin: 10px 0 0 70px;
+    margin: 10px 0 0 50px;
 
 }
 
@@ -369,23 +375,32 @@ h1 {
 }
     /* iphone 6 7 8 landscape */
     @media only screen 
-and (min-width : 375px) and (max-width : 667px)
-and (orientation : landscape) {
+    and (min-width: 375px) 
+    and (max-width: 667px) 
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: landscape) {
 
     #wrapper {
         max-width: 100%;
         position: relative;
+        overflow: hidden;
+
     }
     
     form {
         width: 40%;
         position: absolute;
         text-align: center;
-        left: 210px;
-        bottom: 10px;
+        left: 130px;
+        bottom: 3px;
         z-index: 1;
         background-color: yellow;
     }
+
+    #addshowtext::after {
+        content: " Or, choose one below. Then, click each gif to animate it!";
+    }
+    
     
     h1 {
         font-family: "alienencounters", Arial, Helvetica, sans-serif;
@@ -393,7 +408,7 @@ and (orientation : landscape) {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 80px 30px;
+        padding: 10px 205px 90px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -416,7 +431,7 @@ and (orientation : landscape) {
     }
     
     #buttons80s {
-        margin: 0 20px 0 0;
+        margin: 0 180px 0 0;
         font-size: 22px;
         max-width: 100%;
         display: inline-block;
@@ -428,7 +443,7 @@ and (orientation : landscape) {
     }
     
     #showsDiv {
-        margin: 5px 5px 0 210px;
+        margin: 5px 5px 0 130px;
         width: 250px;
     }
     
@@ -445,24 +460,32 @@ and (orientation : landscape) {
     }
 }
 
-/* iPhone 6/7/ 8 plus portrait */
+/*iPhone 6/7/ 8 plus portrait*/
 @media only screen 
-and (min-width : 414px) 
-and (max-width : 736px) {
+  and (min-width: 414px) 
+  and (max-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
 
     #wrapper {
         max-width: 100%;
+        overflow: hidden;
     }
 
 form {
-    max-width: 40%;
+    max-width: 50%;
     position: absolute;
     text-align: center;
-    left: 150px;
+    left: 56px;
     bottom: 12px;
     z-index: 1;
     background-color: yellow;
 }
+
+#addshowtext::after {
+    content: " Or, choose one below. Then, click each gif to animate it!";
+}
+
 
 h1 {
     font-family: "alienencounters", Arial, Helvetica, sans-serif;
@@ -470,7 +493,7 @@ h1 {
     max-width: 100%;
     color: rgb(255, 196, 0);
     margin: 1px;
-    padding: 30px 45px 90px 45px;
+    padding: 30px 140px 120px 45px;
     text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
 
 }
@@ -493,11 +516,14 @@ h1 {
 }
 
 #buttons80s {
-    margin: 0 80px 0 80px;
-    font-size: 18px;
-    /* width: 75%; */
-    display: inline-block;
-    text-align:center;
+    /* margin: 0 80px 0 80px; */
+    /* padding-right: 195px; */
+    padding-right: 50px;
+    font-size: 16px;
+    width: 90%;
+    /* text-align: center; */
+    margin-left: 3px;
+
 }
 
 .message {
@@ -506,7 +532,7 @@ h1 {
 
 #showsDiv {
     width: 230px;
-    margin: 10px 0 0 98px;
+    margin: 10px 0 0 50px;
 
 }
 
@@ -536,7 +562,7 @@ and (orientation : landscape) {
         width: 40%;
         position: absolute;
         text-align: center;
-        left: 210px;
+        left: 150px;
         bottom: 10px;
         z-index: 1;
         background-color: yellow;
@@ -548,7 +574,7 @@ and (orientation : landscape) {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 80px 30px;
+        padding: 30px 190px 90px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -558,6 +584,10 @@ and (orientation : landscape) {
         padding-bottom: 10px;
         max-width: 100%;
         position: relative;
+    }
+
+    #addshowtext::after {
+        content: " Or, choose one below. Then, click each gif to animate it!";
     }
     
     #buttonswrapper {
@@ -571,7 +601,8 @@ and (orientation : landscape) {
     }
     
     #buttons80s {
-        margin: 0 10px 0 0;
+        margin: 0 10px 0 10px;
+        padding: 0 156px 10px 0;
         font-size: 22px;
         max-width: 100%;
         display: inline-block;
@@ -583,7 +614,7 @@ and (orientation : landscape) {
     }
     
     #showsDiv {
-        margin: 5px 5px 0 240px;
+        margin: 5px 5px 0 170px;
         width: 250px;
     }
     

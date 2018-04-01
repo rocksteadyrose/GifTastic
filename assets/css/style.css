@@ -207,7 +207,7 @@ button:visited, input[type="submit"]:visited {
         max-width: 100%;
         text-align: center;
         padding-left: 30px;
-        padding-bottom: 10px;
+        padding-bottom: 1px;
     }
     
     .message {
@@ -288,7 +288,7 @@ button:visited, input[type="submit"]:visited {
         max-width: 100%;
         text-align: center;
         padding-left: 90px;
-        padding-bottom: 10px;
+        padding-bottom: 1px;
     }
     
     .message {
@@ -398,11 +398,11 @@ button:visited, input[type="submit"]:visited {
     }
 }
 
-        /* ipad landscape */
-        @media only screen 
-        and (min-width : 768px) 
-        and (max-width : 1024px) 
-        and (orientation : landscape) {
+/* ipad landscape */
+@media only screen 
+and (min-width : 768px) 
+and (max-width : 1024px) 
+and (orientation : landscape) {
     
     #wrapper {
         width: 100%;
@@ -564,8 +564,6 @@ button:visited, input[type="submit"]:visited {
         margin: 10px 0 10px 0;
     }
 }
-
-
 /*Screen size: 945px*/
 @media screen and (max-width: 945px) {
 
@@ -886,7 +884,6 @@ button:visited, input[type="submit"]:visited {
     }
 }
 
-
 /*Screen size: 742px*/
 @media screen and (max-width: 742px) {
 
@@ -938,7 +935,7 @@ button:visited, input[type="submit"]:visited {
         font-size: 22px;
         max-width: 100%;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 1px;
     }
     
     .message {
@@ -1018,7 +1015,7 @@ button:visited, input[type="submit"]:visited {
         font-size: 22px;
         max-width: 100%;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 1px;
     }
     
     .message {
@@ -1098,7 +1095,7 @@ button:visited, input[type="submit"]:visited {
         font-size: 22px;
         max-width: 100%;
         text-align: center;
-        padding-bottom: 10px;
+        padding-bottom: 1px;
     }
     
     .message {
@@ -1205,8 +1202,6 @@ button:visited, input[type="submit"]:visited {
         margin: 10px 0 10px 0;
     }
 }
-
-
 
 /*Screen size: 538px*/
 @media screen and (max-width: 538px) {
@@ -1336,7 +1331,7 @@ button:visited, input[type="submit"]:visited {
     
     #buttons80s {
         margin: 0 30px 0 30px;
-        padding-bottom: 10px;
+        padding-bottom: 1px;
         font-size: 22px;
         max-width: 100%;
         text-align: center;
@@ -1416,7 +1411,7 @@ button:visited, input[type="submit"]:visited {
     
     #buttons80s {
         margin: 0 30px 0 30px;
-        padding-bottom: 10px;
+        padding-bottom: 1px;
         font-size: 22px;
         max-width: 100%;
         text-align: center;
@@ -1575,11 +1570,13 @@ button:visited, input[type="submit"]:visited {
     }
     
     #buttons80s {
-        margin: 0 4px 0 4px;
-        padding-bottom: 5px;
+        /* margin: 0 4px 0 4px; */
+        margin: 0 5px 0 -45px;
+        /* padding-bottom: 1px; */
         font-size: 22px;
         max-width: 100%;
         text-align: center;
+        padding-right: 5px;
     }
     
     .message {
@@ -1687,13 +1684,9 @@ button:visited, input[type="submit"]:visited {
         margin: 10px 0 10px 0;
     }
 }
-/* iPhone 6/7/ 8 portrait
-@media only screen 
-  and (min-width: 375px) 
-  and (max-width: 667px) 
-  and (-webkit-min-device-pixel-ratio: 2)
-  and (orientation: portrait) { 
 
+/*Screen size: 375*/
+@media screen and (max-width: 375px) { 
 #wrapper {
     max-width: 100%;
     overflow: hidden;
@@ -1708,12 +1701,10 @@ form {
     position: absolute;
     text-align: center;
     left: 40px;
-    bottom: 12px;
+    top: 180px;
     z-index: 1;
     background-color: yellow;
 }
-
-
 
 h1 {
     font-family: "alienencounters", Arial, Helvetica, sans-serif;
@@ -1744,11 +1735,10 @@ h1 {
 }
 
 #buttons80s {
-    margin: 0 0 0 50px;
-    padding-right: 70px;
+    margin: 0 5px 0 -45px;
+    padding-right: 5px;
     font-size: 18px;
-    width: 90%;
-    text-align:center;
+    width: 100%;
 }
 
 .message {
@@ -1761,261 +1751,4 @@ h1 {
 
 }
 
-} */
-    /* iphone 6 7 8 landscape */
-    /* @media only screen 
-    and (min-width: 375px) 
-    and (max-width: 667px) 
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
-
-    #wrapper {
-        max-width: 100%;
-        position: relative;
-        overflow: hidden;
-
-    }
-    
-    form {
-        width: 40%;
-        position: absolute;
-        text-align: center;
-        left: 130px;
-        bottom: 3px;
-        z-index: 1;
-        background-color: yellow;
-    }
-
-    #addshowtext::after {
-        content: " Or, choose one below. Then, click each gif to animate it!";
-    }
-    
-    
-    h1 {
-        font-family: "alienencounters", Arial, Helvetica, sans-serif;
-        text-align: center;
-        max-width: 100%;
-        color: rgb(255, 196, 0);
-        margin: 1px;
-        padding: 10px 10px 90px 10px;
-        text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
-    
-    }
-    
-    #formwrapper {
-        background-color:yellow;
-        padding-bottom: 10px;
-        max-width: 100%;
-        position: relative;
-    }
-    
-    #buttonswrapper {
-        max-width: 100%;
-        position: relative;
-        background-color: yellow;
-    }
-
-    #buttonsbackground {
-        background-color: rgb(167, 245, 10);
-    }
-    
-    #buttons80s {
-        margin: 0 180px 0 0;
-        font-size: 22px;
-        max-width: 100%;
-        display: inline-block;
-        text-align:center;
-    }
-    
-    .message {
-        visibility: hidden;
-    }
-    
-    #showsDiv {
-        margin: 5px 5px 0 130px;
-        width: 250px;
-    }
-    
-    .chosengif img {
-        height: auto;
-        width: 100%;
-    }
-    
-    .chosengif {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        margin: 10px 0 10px 0;
-    /* }
-}
-
-/*iPhone 6/7/ 8 plus portrait*/
-/* @media only screen 
-  and (min-width: 414px) 
-  and (max-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-
-    #wrapper {
-        max-width: 100%;
-        overflow: hidden;
-    }
-
-form {
-    max-width: 50%;
-    position: absolute;
-    text-align: center;
-    left: 56px;
-    bottom: 12px;
-    z-index: 1;
-    background-color: yellow;
-}
-
-#addshowtext::after {
-    content: " Or, choose one below. Then, click each gif to animate it!";
-}
-
-
-h1 {
-    font-family: "alienencounters", Arial, Helvetica, sans-serif;
-    text-align: center;
-    max-width: 100%;
-    color: rgb(255, 196, 0);
-    margin: 1px;
-    padding: 30px 140px 120px 45px;
-    text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
-
-}
-
-#formwrapper {
-    background-color:yellow;
-    padding-bottom: 10px;
-    max-width: 100%;
-    position: relative;
-}
-
-#buttonswrapper {
-    max-width: 100%;
-    background-color: yellow;
-}
-
-#buttonsbackground {
-    background-color: rgb(167, 245, 10);
-    padding-bottom: 5px;
-} */
-
-/* #buttons80s { */
-    /* margin: 0 80px 0 80px; */
-    /* padding-right: 195px; */
-    /* padding-right: 50px;
-    font-size: 16px;
-    width: 90%; */
-    /* text-align: center; */
-    /* margin-left: 3px;
-
-}
-
-.message {
-    visibility: hidden;
-}
-
-#showsDiv {
-    width: 230px;
-    margin: 10px 0 0 50px;
-
-}
-
-.chosengif img {
-    height: auto;
-    max-width: 100%;
-}
-
-.chosengif {
-    width: 230px;
-    height: 100%;
-    margin: 10px 0 10px 0;
-}
-} */
-    /* iphone 6 7 8 plus landscape */
-    /* @media only screen 
-and (min-width : 414px) 
-and (max-width : 736px) 
-and (orientation : landscape) { */
-
-    /* #wrapper {
-        max-width: 100%;
-        position: relative;
-    }
-    
-    form {
-        width: 40%;
-        position: absolute;
-        text-align: center;
-        left: 150px;
-        bottom: 10px;
-        z-index: 1;
-        background-color: yellow;
-    }
-    
-    h1 {
-        font-family: "alienencounters", Arial, Helvetica, sans-serif;
-        text-align: center;
-        max-width: 100%;
-        color: rgb(255, 196, 0);
-        margin: 1px;
-        padding: 30px 190px 90px 30px;
-        text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
-    
-    }
-    
-    #formwrapper {
-        background-color:yellow;
-        padding-bottom: 10px;
-        max-width: 100%;
-        position: relative;
-    }
-
-    #addshowtext::after {
-        content: " Or, choose one below. Then, click each gif to animate it!";
-    }
-    
-    #buttonswrapper {
-        max-width: 100%;
-        position: relative;
-        background-color: yellow;
-    }
-
-    #buttonsbackground {
-        background-color: rgb(167, 245, 10);
-    }
-    
-    #buttons80s {
-        margin: 0 10px 0 10px;
-        padding: 0 156px 10px 0;
-        font-size: 22px;
-        max-width: 100%;
-        display: inline-block;
-        text-align:center;
-    }
-    
-    .message {
-        visibility: hidden;
-    }
-    
-    #showsDiv {
-        margin: 5px 5px 0 170px;
-        width: 250px;
-    }
-    
-    .chosengif img {
-        height: auto;
-        width: 100%;
-    }
-    
-    .chosengif {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        margin: 10px 0 10px 0;
-    }
-} */
+} 

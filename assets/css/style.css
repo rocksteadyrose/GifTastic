@@ -1609,8 +1609,8 @@ form {
     }
 }
 
-/*Screen size: 420px*/
-@media screen and (max-width: 420px) {
+/*Screen size: 414px*/
+@media screen and (max-width: 417px) {
 
     #wrapper {
         max-width: 100%;
@@ -1622,11 +1622,11 @@ form {
     }
     
     form {
-        width: 80%;
-        padding-right: 190px;
+        width: 90%;
+        padding-right: 180px;
         position: absolute;
         text-align: center;
-        left: 140px;
+        left: 110px;
         top: 140px;
         z-index: 1;
         background-color: yellow;
@@ -1639,7 +1639,7 @@ form {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 130px 30px;
+        padding: 30px 30px 110px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -1710,11 +1710,11 @@ form {
     }
     
     form {
-        width: 90%;
-        padding-right: 210px;
+        width: 100%;
+        padding-right: 190px;
         position: absolute;
         text-align: center;
-        left: 130px;
+        left: 85px;
         top: 140px;
         z-index: 1;
         background-color: yellow;
@@ -1727,7 +1727,7 @@ form {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 135px 30px;
+        padding: 30px 30px 120px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -1794,12 +1794,17 @@ form {
     content: " Or, choose one below. Then, click each gif to animate it!";
 }
 
+#shows-input {
+    width: 60%;
+}
+
 form {
-    width: 80%;
+    width: 100%;
+    padding-right: 190px;
     position: absolute;
     text-align: center;
-    left: 40px;
-    top: 180px;
+    left: 85px;
+    top: 170px;
     z-index: 1;
     background-color: yellow;
     box-shadow: none;
@@ -1811,7 +1816,7 @@ h1 {
     max-width: 100%;
     color: rgb(255, 196, 0);
     margin: 1px;
-    padding: 30px 90px 100px 79px;
+    padding: 30px 90px 110px 79px;
     text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
 
 }

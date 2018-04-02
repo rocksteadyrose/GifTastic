@@ -51,6 +51,8 @@ form {
     top: 184px;
     right: 40px;
     z-index: 1;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 h1 {
@@ -68,6 +70,7 @@ h1 {
     font-family: "pacfont", Arial, Helvetica, sans-serif;
     color: greenyellow;
     text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #buttonswrapper {
@@ -78,6 +81,7 @@ h1 {
 #buttonsbackground {
     background-color: rgb(167, 245, 10);
     padding-bottom: 12px;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 #buttons80s {
@@ -88,10 +92,14 @@ h1 {
     text-align: center;
 }
 
+button {
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 .message {
     text-align: center;
     font-size: 18px;
-    top: 140px;
+    top: 160px;
     left: 380px;
     position: absolute;
 
@@ -108,6 +116,8 @@ h1 {
     border: 0 none;
     float: left;
     width: 100%;
+    box-shadow: 0 12px 8px 0 rgba(0, 0, 0, 0.2);
+
 }
 
 .chosengif {
@@ -116,6 +126,7 @@ h1 {
     margin: 20px 5px 25px;
     overflow: hidden;
     float: left;
+
 }
 
 .chosengif h3 {
@@ -139,7 +150,7 @@ button, input[type="submit"] {
 }
 
 button:hover, input[type="submit"]:hover {
-    background-color: greenyellow;
+    background-color: rgb(255, 189, 47);
     color: rgb(255, 0, 149);
 }
 
@@ -163,14 +174,21 @@ button:visited, input[type="submit"]:visited {
         position: relative;
     }
     
+    #shows-input {
+        width: 40%;
+    }
+
     form {
         width: 30%;
+        padding-right: 80px;
         position: absolute;
         text-align: center;
-        left: 400px;
+        left: 450px;
         top: 90px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
+
     }
     
     h1 {
@@ -244,14 +262,20 @@ button:visited, input[type="submit"]:visited {
         position: relative;
     }
     
+    #shows-input {
+        width: 40%;
+    }
+    
     form {
         width: 30%;
+        margin-right: 280px;
         position: absolute;
         text-align: center;
-        left: 400px;
+        left: 455px;
         top: 90px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -262,7 +286,6 @@ button:visited, input[type="submit"]:visited {
         margin: 1px;
         padding: 30px 30px 100px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
-    
     }
     
     #formwrapper {
@@ -317,6 +340,36 @@ button:visited, input[type="submit"]:visited {
     }
 }
 
+/*Screen size: 1162px**/
+@media screen and (max-width: 1162px) {
+    #shows-input {
+        width: 30%;
+    }
+    
+    form {
+        width: 60%;
+        margin-right: 180px;
+        position: absolute;
+        text-align: center;
+        left: 250px;
+        top: 90px;
+        z-index: 1;
+        background-color: yellow;
+        box-shadow: none;
+    }
+
+
+    h1 {
+        font-family: "alienencounters", Arial, Helvetica, sans-serif;
+        text-align: center;
+        max-width: 100%;
+        color: rgb(255, 196, 0);
+        margin: 1px;
+        padding: 30px 30px 80px 30px;
+        text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
+    }
+}
+
 /*Screen size: 1072px*/
 @media screen and (max-width: 1072px) {
 
@@ -325,14 +378,20 @@ button:visited, input[type="submit"]:visited {
         position: relative;
     }
     
-    form {
+    #shows-input {
         width: 30%;
+    }
+    
+    form {
+        width: 60%;
+        margin-right: 180px;
         position: absolute;
         text-align: center;
-        left: 400px;
+        left: 250px;
         top: 90px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -341,7 +400,7 @@ button:visited, input[type="submit"]:visited {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 100px 30px;
+        padding: 30px 30px 90px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -409,14 +468,20 @@ and (orientation : landscape) {
         position: relative;
     }
     
+    #shows-input {
+        width: 30%;
+    }
+    
     form {
-        width: 50%;
+        width: 60%;
+        margin-right: 180px;
         position: absolute;
         text-align: center;
-        left: 260px;
-        bottom: 12px;
+        left: 250px;
+        top: 90px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -497,10 +562,11 @@ and (orientation : landscape) {
         width: 60%;
         position: absolute;
         text-align: center;
-        left: 190px;
+        left: 240px;
         bottom: 10px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -564,22 +630,28 @@ and (orientation : landscape) {
         margin: 10px 0 10px 0;
     }
 }
-/*Screen size: 945px*/
-@media screen and (max-width: 945px) {
+/*Screen size: 946px*/
+@media screen and (max-width: 946px) {
 
     #wrapper {
         max-width: 100%;
         position: relative;
     }
+
+    #shows-input {
+        width: 30%;
+    }
     
     form {
-        width: 60%;
+        width: 70%;
+        margin-right: 300px;
         position: absolute;
         text-align: center;
-        left: 190px;
-        bottom: 10px;
+        left: 180px;
+        top: 90px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -652,14 +724,21 @@ and (orientation : landscape) {
         position: relative;
     }
     
+   
+    #shows-input {
+        width: 30%;
+    }
+    
     form {
-        width: 60%;
+        width: 70%;
+        margin-right: 300px;
         position: absolute;
         text-align: center;
-        left: 190px;
-        bottom: 10px;
+        left: 170px;
+        top: 90px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -740,6 +819,7 @@ and (orientation : landscape) {
         bottom: 10px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -804,6 +884,26 @@ and (orientation : landscape) {
     }
 }
 
+
+/*Screen size: 710*/
+@media screen and (max-width: 710px) {
+#shows-input {
+    width: 30%;
+}
+
+form {
+    width: 70%;
+    padding-right: 30px;
+    position: absolute;
+    text-align: center;
+    left: 190px;
+    top: 90px;
+    z-index: 1;
+    background-color: yellow;
+    box-shadow: none;
+}
+}
+
 /*Screen size: 796px*/
 @media screen and (max-width: 796px) {
 
@@ -820,6 +920,7 @@ and (orientation : landscape) {
         top: 85px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -900,6 +1001,7 @@ and (orientation : landscape) {
         top: 105px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -980,6 +1082,7 @@ and (orientation : landscape) {
         top: 105px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -1052,14 +1155,20 @@ and (orientation : landscape) {
         position: relative;
     }
     
+    #shows-input {
+        width: 30%;
+    }
+    
     form {
-        width: 80%;
+        width: 70%;
+        padding-right: 150px;
         position: absolute;
         text-align: center;
-        left: 60px;
-        top: 104px;
+        left: 190px;
+        top: 105px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -1123,6 +1232,7 @@ and (orientation : landscape) {
         margin: 10px 0 10px 0;
     }
 }
+
 /*Screen size: 600px*/
 @media screen and (max-width: 600px) {
 
@@ -1131,14 +1241,20 @@ and (orientation : landscape) {
         position: relative;
     }
     
+    #shows-input {
+        width: 50%;
+    }
+    
     form {
-        width: 90%;
+        width: 60%;
+        padding-right: 170px;
         position: absolute;
         text-align: center;
-        left: 20px;
-        top: 110px;
+        left: 190px;
+        top: 105px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -1147,7 +1263,7 @@ and (orientation : landscape) {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 70px 30px;
+        padding: 30px 30px 110px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -1203,83 +1319,28 @@ and (orientation : landscape) {
     }
 }
 
-/*Screen size: 538px*/
-@media screen and (max-width: 538px) {
+/*Screen size: 584px*/
+@media screen and (max-width: 584px) {
 
     #wrapper {
         max-width: 100%;
         position: relative;
     }
+
+    #shows-input {
+        width: 50%;
+    }
     
     form {
-        width: 100%;
+        width: 80%;
+        padding-right: 170px;
         position: absolute;
         text-align: center;
-        left: 3px;
-        bottom: 10px;
+        left: 150px;
+        top: 125px;
         z-index: 1;
         background-color: yellow;
-    }
-    
-    h1 {
-        font-family: "alienencounters", Arial, Helvetica, sans-serif;
-        text-align: center;
-        max-width: 100%;
-        color: rgb(255, 196, 0);
-        margin: 1px;
-        padding: 30px 30px 70px 30px;
-        text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
-    
-    }
-    
-    #formwrapper {
-        background-color:yellow;
-        padding-bottom: 10px;
-        max-width: 100%;
-        position: relative;
-    }
-    
-    #buttonswrapper {
-        max-width: 100%;
-        position: relative;
-        background-color: yellow;
-    }
-
-    #buttonsbackground {
-        background-color: rgb(167, 245, 10);
-    }
-    
-    #buttons80s {
-        margin: 0 30px 0 30px;
-        padding-bottom: 10px;
-        font-size: 22px;
-        max-width: 100%;
-        text-align: center;
-    }
-    
-    .message {
-        visibility: hidden;
-    }
-
-    #addshowtext::after {
-        content: " Or, choose one below. Then click each gif to animate it!";
-    }
-    
-    #showsDiv {
-        margin: 5px 5px 0 140px;
-        width: 250px;
-    }
-    
-    .chosengif img {
-        height: auto;
-        width: 100%;
-    }
-    
-    .chosengif {
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        margin: 10px 0 10px 0;
+        box-shadow: none;
     }
 }
 
@@ -1290,15 +1351,28 @@ and (orientation : landscape) {
         max-width: 100%;
         position: relative;
     }
+}
+    /*Screen size: 538px*/
+@media screen and (max-width: 538px) {
+    #wrapper {
+        max-width: 100%;
+        position: relative;
+    }
+
+    #shows-input {
+        width: 50%;
+    }
     
     form {
         width: 60%;
+        padding-right: 170px;
         position: absolute;
         text-align: center;
-        left: 100px;
-        bottom: 7px;
+        left: 200px;
+        top: 115px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -1307,7 +1381,7 @@ and (orientation : landscape) {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 100px 30px;
+        padding: 30px 30px 140px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -1363,22 +1437,28 @@ and (orientation : landscape) {
     }
 }
 
-/*Screen size: 500*/
-@media screen and (max-width: 500px) {
+/*Screen size: 501*/
+@media screen and (max-width: 501px) {
 
     #wrapper {
         max-width: 100%;
         position: relative;
     }
     
+    #shows-input {
+        width: 50%;
+    }
+    
     form {
         width: 60%;
+        padding-right: 100px;
         position: absolute;
         text-align: center;
-        left: 100px;
-        bottom: 7px;
+        left: 150px;
+        top: 115px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -1387,7 +1467,7 @@ and (orientation : landscape) {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 100px 30px;
+        padding: 30px 30px 120px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -1450,15 +1530,21 @@ and (orientation : landscape) {
         max-width: 100%;
         position: relative;
     }
+
+    #shows-input {
+        width: 50%;
+    }
     
     form {
         width: 80%;
+        padding-right: 170px;
         position: absolute;
         text-align: center;
-        left: 50px;
-        top: 110px;
+        left: 130px;
+        top: 115px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -1467,7 +1553,7 @@ and (orientation : landscape) {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 90px 30px;
+        padding: 30px 30px 120px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -1531,14 +1617,20 @@ and (orientation : landscape) {
         position: relative;
     }
     
+    #shows-input {
+        width: 60%;
+    }
+    
     form {
-        width: 70%;
+        width: 80%;
+        padding-right: 190px;
         position: absolute;
         text-align: center;
-        left: 70px;
-        top: 135px;
+        left: 140px;
+        top: 140px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -1547,7 +1639,7 @@ and (orientation : landscape) {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 90px 30px;
+        padding: 30px 30px 130px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -1613,14 +1705,20 @@ and (orientation : landscape) {
         position: relative;
     }
     
-    form {
+    #shows-input {
         width: 60%;
+    }
+    
+    form {
+        width: 90%;
+        padding-right: 210px;
         position: absolute;
         text-align: center;
-        left: 80px;
-        bottom: 7px;
+        left: 130px;
+        top: 140px;
         z-index: 1;
         background-color: yellow;
+        box-shadow: none;
     }
     
     h1 {
@@ -1629,7 +1727,7 @@ and (orientation : landscape) {
         max-width: 100%;
         color: rgb(255, 196, 0);
         margin: 1px;
-        padding: 30px 30px 110px 30px;
+        padding: 30px 30px 135px 30px;
         text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
     
     }
@@ -1704,6 +1802,7 @@ form {
     top: 180px;
     z-index: 1;
     background-color: yellow;
+    box-shadow: none;
 }
 
 h1 {

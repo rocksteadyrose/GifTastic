@@ -1856,3 +1856,77 @@ h1 {
 }
 
 } 
+
+/*Screen size: 320*/
+@media screen and (max-width: 320px) { 
+    #wrapper {
+        max-width: 100%;
+        overflow: hidden;
+    }
+    
+    #addshowtext::after {
+        content: " Or, choose one below. Then, click each gif to animate it!";
+    }
+    
+    #shows-input {
+        width: 60%;
+    }
+    
+    form {
+        width: 100%;
+        padding-right: 130px;
+        position: absolute;
+        text-align: center;
+        left: 60px;
+        top: 170px;
+        z-index: 1;
+        background-color: yellow;
+        box-shadow: none;
+    }
+    
+    h1 {
+        font-family: "alienencounters", Arial, Helvetica, sans-serif;
+        text-align: center;
+        max-width: 100%;
+        color: rgb(255, 196, 0);
+        margin: 1px;
+        padding: 30px 90px 110px 60px;
+        text-shadow: -1px 0 rgb(255, 0, 149), 0 1px rgb(255, 0, 149), 1px 0 rgb(255, 0, 149), 0 -1px rgb(255, 0, 149);
+    
+    }
+    
+    #formwrapper {
+        background-color:yellow;
+        padding-bottom: 10px;
+        max-width: 100%;
+        position: relative;
+    }
+    
+    #buttonswrapper {
+        max-width: 100%;
+        background-color: yellow;
+    }
+    
+    #buttonsbackground {
+        background-color: rgb(167, 245, 10);
+        padding-bottom: 5px;
+    }
+    
+    #buttons80s {
+        margin: 0 5px 0 -45px;
+        padding-right: 5px;
+        font-size: 18px;
+        width: 100%;
+    }
+    
+    .message {
+        visibility: hidden;
+    }
+    
+    #showsDiv {
+        width: 230px;
+        margin: 10px 0 0 50px;
+    
+    }
+    
+    } 

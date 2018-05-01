@@ -3,7 +3,7 @@
 DEPLOYED PROJECT LINK: https://rocksteadyrose.github.io/GifTastic/
 
 
-This dynamic site uses the GIPHY API to populate gifs of our (and the user's) choosing.
+This site calls the GIPHY API and populates the page with 80s TV show gifs. Additionally, the user can use this site to search for their own 80s TV shows.
 
 Click one of the TV show buttons to view 10 gifs related to that TV show from the GIPHY API. To animate each gif, just click the gif. Click the gif again and it will stop animating.
 

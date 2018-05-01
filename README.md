@@ -1,5 +1,8 @@
 # Totally tubular TV gifs - 80s style!
 
+DEPLOYED PROJECT LINK: https://rocksteadyrose.github.io/GifTastic/
+
+
 This dynamic site uses the GIPHY API to populate gifs of our (and the user's) choosing.
 
 Click one of the TV show buttons to view 10 gifs related to that TV show from the GIPHY API. To animate each gif, just click the gif. Click the gif again and it will stop animating.
